@@ -1,0 +1,68 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <style>
+        /*
+          body{background: skyblue; font-family: Verdana; color: black; padding: 30px;}
+          h1{font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+          p{font-size: 16px; text-align: center;}
+        */
+          </style>
+  </head>
+  <body>
+<!--start of nav bar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="grade">
+    <a class="navbar-brand" href="#">PROUD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+        <!--  <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoginForm">Login</a> <!--changed to login-->  
+          <a class="nav-link" href="/register">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Other ERGs</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--end of nav bar-->
+ 
+      </div>
+      <div class="lead d-flex justify-content-center text">
+        <h1 class="display-1">Login</h1>
+      </div>
+      <% if (messages.error) { %>
+        <%= messages.error %>
+      <% } %>
+      <form action="/login" method="post">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required> 
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+   
+      <footer class="fixed-botton">
+          <a href="/register">Register</a>
+          <br>
+          <a href="/">Home</a>
+      </footer> 
+      
+  </body>
+</html>
+

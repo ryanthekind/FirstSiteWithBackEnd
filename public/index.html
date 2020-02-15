@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>PROUD: Greater Boston Chapter</title>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+        #demo {
+            background-color: white;
+        }
+        .carousel-caption {
+          color: #eb9029;
+          opacity: 0.8;
+          line-height: 1;
+          padding: 0;
+          text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+        }
+        .hide-me {
+          display: none;
+        }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!--PROUD Header-->
+      <div id="menu">
+        <div id="logo" class="container justify-content-center">
+          <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid" src="./images/proudLogo.png" alt="proud">
+            </div>    
+          </div>
+        </div>
+    </div>
+    </header>
+
+    <!--start of nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="grade">
+      <a class="navbar-brand" href="#">PROUD</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+          <!--  <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLoginForm">Login</a> <!--changed to login-->  
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Other ERGs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--end of nav bar-->
+
+    <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li> 
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        
+        <!-- The slideshow -->  
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/prideflag.jpg" alt="200 Berkeley  Pride 2019" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/dayofpink.jpg" alt="Day of Pink 2019" width="1100" height="500">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Day of Pink 2019</h5>
+                <p>Employees wear pink to stand up against bullying</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/prideparade.jpg" alt="Pride 2018" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/proud_pride.jpg" alt="pride t-shirt 2018" width="1100" height="500">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>&ldquo;We Will Not Be Silent&rdquo;</h5>
+              <p>John Hancock employees wearing the 2018 PROUD t-shirt</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <hr>
+    <!--Mission and objectives-->
+    <section id="body" class="container">
+        <section id="main" class="col-md-8">
+        <p class="lead">PROUD is a grassroots organization that aims to promote an inclusive workplace for lesbian, gay, bisexual and transgender (LGBT) employees in order to promote their full and unencumbered contributions to Manulife/John Hancock.</p>
+        
+        <p class="lead d-flex justify-content-center text-primary">Our Mission:</p>
+        <ul class="list-group lead list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center">Promote a positive work environment for LGBT employees and enhance their engagement and retention.</li>
+          <li class="list-group-item">Promote cultural awareness and diversity of thought internally</li>
+          <li class="list-group-item"> Provide professional development and networking opportunities for LGBT employees and their “allies”, including employees working remotely</li>
+          <li class="list-group-item">Provide informal mentorship through the sharing of experiences</li>
+          <li class="list-group-item">Support people who want to be comfortable with being “out” at work</li>
+          <li class="list-group-item">Support the Manulife/John Hancock brand by developing a credible presence within the local community</li>
+        </ul>
+        </section>
+    </section>
+    <br>
+
+    <!--volunteer form-->
+    <div class="container">
+      <h3 class="display-4 text-muted">Want to get involved?</h3>
+
+      <br> 
+      <h3 class="display-4 text-muted">Fill out the form below:</h3>
+      <div class="row"> <!--start of row-->
+      
+      <div class="col-sm-8">
+      <form name="myForm" action="/addname" method="post" onsubmit="return checkForm(this);">
+      <div class="form-group">
+        <label for="fname">First name</label>
+        <input class="form-control" type="text" name="firstName" id="fname" placeholder="First Name" minlength="2" maxlength="10"> 
+      </div>
+      <div class="form-group">
+        <label for="lname">Last name</label>
+        <input class="form-control" type="text" name="lastName" id="lname" placeholder="Last Name" minlength="2" maxlength="15"> 
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input class="form-control" type="email" name="email" id="email" placeholder="someone@email.com">
+        <small class="form-text text-muted">Your email will not be shared with anyone.</small>
+      </div>
+      <div class="form-group">
+        <label for="info">How did you hear about PROUD?</label>
+        <select class="form-control" id="info">
+          <option value="yammer">Yammer</option>
+          <option value="word">Word of Mouth</option>
+          <option value="event">Attended an Event</option>
+          <option value="friend">Friend/Coworker</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="userInput">Have any ideas for PROUD?</label>
+        <textarea class="form-control" id="userInput" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-success" id="btn" data-toggle="modal" data-target="#thanksModal">Submit</button>
+      </form>
+      </div>
+      <div class="col-sm-4">
+        <img src="./images/corporatepride.jpg" alt="rainbowLogo" data-toggle="tooltip" title="John Hancock" class="img-fluid" id="image" onmouseover="newPicture()" onmouseout="oldPicture()">
+      </div> <!--end row-->
+    </div>
+    </div>
+
+<!--CS602-->
+<!--Thank you modal-->
+<div class="modal fade" tabindex="-1" role="dialog" id="thanksModal">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">Thank you!</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Thank you for showing interest in PROUD!.</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick="window.location.reload();">Close</button>
+  </div>
+</div>
+</div>
+</div>
+    <hr>
+    <footer class="container">
+        <a target="_blank" href="#totop">Return to top of page</a>
+    </footer>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
